@@ -26,12 +26,19 @@ for(i=1;i<101;i=i+1){
     location.href = "http://www.yahoo.co.jp/";
   }
   }
-  
+  function OnButtonClick() {
+            target = document.getElementById("output");
+            target.innerHTML = "Penguin";
+        }
 </script> 
 <body> 
 <p>
 <input type="button" value="時間取得" onclick="kakunin()">
 <input type="button" value="jump" onclick="jump()">
 </p> 
+ <input type="button" value="Exec" onclick="OnButtonClick();"/>
+<br />
+    <br />
+    <div id="output"></div>
 </body> 
 </html>
