@@ -11,10 +11,11 @@ for(i=1;i<101;i=i+1){
      alert("お試し");
 
  DD = new Date();
-  Year = DD.getYear();
-  Month = DD.getMonth() + 1;
-  Day = DD.getDate();
-  document.write(Year,"年",Month,"月",Day,"日");
+  Hours = DD.getHours();
+  Minutes = DD.getMinutes() + 1;
+  Seconds = DD.getSeconds();
+  
+  document.write(Hours,"時","Minutes","分",Seconds,"秒");
      
 </script> 
 <body> 
