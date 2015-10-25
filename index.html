@@ -29,6 +29,12 @@ for(i=1;i<101;i=i+1){
   function OnButtonClick() {
             target = document.getElementById("output");
             target.innerHTML = "Penguin";
+            target2 = document.getElementById("time");
+           DD = new Date();
+           Hours = DD.getHours();
+           Minutes = DD.getMinutes() + 1;
+           Seconds = DD.getSeconds();
+            target2.innerHTML = Hours;
         }
 </script> 
 <body> 
@@ -40,5 +46,9 @@ for(i=1;i<101;i=i+1){
 <br />
     <br />
     <div id="output"></div>
+    <div id="time"></div>
+
+
+
 </body> 
 </html>
